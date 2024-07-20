@@ -1,15 +1,15 @@
 // Login.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [userId, setUserId] = useState('');
     const [password, setPassword] = useState('');
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleLogin = () => {
         // Perform any necessary actions here
-        history.push('/otp-authentication');
+        nevigate('/otp-authentication');
     };
 
     return (
@@ -33,3 +33,7 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
+

@@ -1,13 +1,13 @@
 // AgreeTerms.js
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const AgreeTerms = () => {
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleAgree = () => {
         // Perform any necessary actions here
-        history.push('/account-info');
+        nevigate('/account-info');
     };
 
     return (

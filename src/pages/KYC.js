@@ -1,13 +1,13 @@
 // KYC.js
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const KYC = () => {
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleSave = () => {
         // Perform any necessary actions here
-        history.push('/manage-team');
+        nevigate('/manage-team');
     };
 
     return (

@@ -1,17 +1,18 @@
 // AccountInfo.js
+
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const AccountInfo = () => {
     const [name, setName] = useState('');
     const [shopName, setShopName] = useState('');
     const [pincode, setPincode] = useState('');
     const [email, setEmail] = useState('');
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleNext = () => {
         // Perform any necessary actions here
-        history.push('/select-commodity');
+        nevigate('/select-commodity');
     };
 
     return (

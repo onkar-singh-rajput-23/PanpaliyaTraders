@@ -1,14 +1,14 @@
 // OTPAuthentication.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const OTPAuthentication = ({ userName }) => {
     const [otp, setOtp] = useState('');
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleSubmit = () => {
         // Perform any necessary actions here
-        history.push('/market-place');
+        nevigate('/market-place');
     };
 
     return (

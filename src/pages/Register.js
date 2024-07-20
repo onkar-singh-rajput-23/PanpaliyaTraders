@@ -1,14 +1,14 @@
 // Register.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const [phone, setPhone] = useState('');
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleVerification = () => {
         // Perform any necessary actions here
-        history.push('/verify');
+        nevigate('/verify');
     };
 
     return (

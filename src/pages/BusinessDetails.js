@@ -1,6 +1,6 @@
 // BusinessDetails.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const BusinessDetails = () => {
     const [shopName, setShopName] = useState('');
@@ -10,11 +10,11 @@ const BusinessDetails = () => {
     const [landmark, setLandmark] = useState('');
     const [pincode, setPincode] = useState('');
     const [gstin, setGstin] = useState('');
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleSave = () => {
         // Perform any necessary actions here
-        history.push('/add-bank-details');
+        nevigate('/add-bank-details');
     };
 
     return (

@@ -1,16 +1,16 @@
 // Home.js
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleRegister = () => {
-        history.push('/register');
+        nevigate('/register');
     };
 
     const handleLogin = () => {
-        history.push('/login');
+        nevigate('/login');
     };
 
     return (
@@ -28,3 +28,7 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+

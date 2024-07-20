@@ -1,14 +1,14 @@
 // Verify.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Verify = () => {
     const [verificationCode, setVerificationCode] = useState('');
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleSubmit = () => {
         // Perform any necessary actions here
-        history.push('/set-password');
+        nevigate('/set-password');
     };
 
     const handleResendCode = () => {

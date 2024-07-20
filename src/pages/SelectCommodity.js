@@ -1,13 +1,13 @@
 // SelectCommodity.js
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SelectCommodity = () => {
-    const history = useHistory();
+    const nevigate = useNavigate();
 
     const handleNext = () => {
         // Perform any necessary actions here
-        history.push('/user-details');
+        nevigate('/user-details');
     };
 
     return (
